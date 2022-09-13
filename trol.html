@@ -1,0 +1,52 @@
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="estilos.css">
+<link href="https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap" rel="stylesheet">
+
+<style type="text/css">
+
+    h1, h3 {
+        font-family: 'Coming Soon', cursive;
+    }
+
+    h1 + h1 {
+        color: #11AB66;
+    }
+
+    h1 {
+        color: #BBBAA2;
+        display: inline;
+    }
+
+</style>
+
+<script>
+
+// Todas as funções :)
+
+    function pularLinha() {
+        document.write("<br><br><br>");
+    }
+
+    function exibir(conteúdo) {
+        document.write("<h1>" + conteúdo + "</h1>");
+        pularLinha();
+    }
+
+// Primeira mensagem:
+
+
+    alert("Adivinhe o número que o navegador pensou. Foi 0, 1, 2, 3, 4 ou 5? ")
+
+
+// Todas as variáveis:
+
+    var numeroPensado = Math.round(Math.random()*10)
+    var chute = parseInt(prompt("Em qual número eu pensei? De 0 à 5 okay?"))
+
+    if (chute == numeroPensado) {
+        exibir("Você acertou! Mas continua sendo NOOB  (╯ ͡❛ ▭ ͡❛)╯┻━┻")
+    } else {
+        exibir("Você errou! Eu sei que você é muito NOOB, por isso pode tentar mais vezes. Tenta aí.  ¯\_( ͡❛ ͜ʖ ͡❛)_/¯")
+    }
+
+</script>
